@@ -1,8 +1,12 @@
 import 'react-native-reanimated'
-import Home from './scr/pages/home'
+import { NavigationContainer } from "@react-navigation/native";
+import { Routes } from './scr/routes';
 
 export default function App() {
   return (
-    <Home/>
+    <NavigationContainer>
+      <Routes/>
+    </NavigationContainer>
+    
   );
 }
